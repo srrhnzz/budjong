@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("lol.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  text-align: center;
+}
+
+#question {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+h1{
+  color: white;
+}

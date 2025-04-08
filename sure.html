@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="sure.css">
+</head>
+  <title>HTML</title>
+  <body>
+<div id="container">
+  <h1 id="question">Do you like me?</h1>
+  <div id="button-container">
+    <button id="yes" onclick=window.location.href="https://youtu.be/xfQ_Fisto-8?si=dAelS8NYkZ8r1i0g">
+      <h3>YES</h3>
+      </button>
+    <button id="no"><h3>No!</h3></button>
+  </div>
+</div>
+  </body>
+  <script>
+  let yesButton = document.getElementById('yes');
+let noButton = document.getElementById('no');
+let yesScale = 1;
+let noScale = 1;
+
+noButton.addEventListener('click', () => {
+  yesScale += 0.5;
+  yesButton.style.transform = `scale(${yesScale})`;
+  noScale -= 0.1;
+  noButton.style.transform = `scale(${noScale})`;
+  if (noScale < 0.1) {
+    noButton.style.display = 'none';
+  }
+});
+  </script>
